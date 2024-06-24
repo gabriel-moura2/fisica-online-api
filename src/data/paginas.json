@@ -1,0 +1,304 @@
+[
+    { "id": 1, "titulo": "Física", "segmento": "fisica" },
+    { "id": 2, "titulo": "Termologia", "segmento": "termologia", "parentId": 1 },
+    {
+        "id": 3,
+        "titulo": "Calorimetria",
+        "segmento": "calorimetria",
+        "parentId": 2
+    },
+    {
+        "id": 4,
+        "titulo": "Calorimetria I",
+        "segmento": "texto01",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 13, "anterior": null },
+        "parentId": 3
+    },
+    {
+        "id": 5,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 6, "anterior": null },
+        "parentId": 4
+    },
+    {
+        "id": 6,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 21, "anterior": 5 },
+        "parentId": 4
+    },
+    { "id": 7, "titulo": "Mecânica", "segmento": "mecanica", "parentId": 1 },
+    { "id": 8, "titulo": "Dinâmica", "segmento": "dinamica", "parentId": 7 },
+    {
+        "id": 10,
+        "titulo": "Dinâmica II",
+        "segmento": "texto02",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": null },
+        "parentId": 8
+    },
+    {
+        "id": 11,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 12, "anterior": null },
+        "parentId": 10
+    },
+    {
+        "id": 12,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 11 },
+        "parentId": 10
+    },
+    {
+        "id": 13,
+        "titulo": "Calorimetria II",
+        "segmento": "texto02",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 14, "anterior": 4 },
+        "parentId": 3
+    },
+    {
+        "id": 14,
+        "titulo": "Calorimetria III",
+        "segmento": "texto03",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 15, "anterior": 13 },
+        "parentId": 3
+    },
+    {
+        "id": 15,
+        "titulo": "Calorimetria IV",
+        "segmento": "texto04",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 14 },
+        "parentId": 3
+    },
+    {
+        "id": 16,
+        "titulo": "Termodinâmica",
+        "segmento": "termodinamica",
+        "parentId": 2
+    },
+    {
+        "id": 17,
+        "titulo": "Gases (01)",
+        "segmento": "texto01",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 18, "anterior": null },
+        "parentId": 16
+    },
+    {
+        "id": 18,
+        "titulo": "Gases (02)",
+        "segmento": "texto02",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 19, "anterior": 17 },
+        "parentId": 16
+    },
+    {
+        "id": 19,
+        "titulo": "Trabalho realizado por um gás",
+        "segmento": "texto03",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 20, "anterior": 18 },
+        "parentId": 16
+    },
+    {
+        "id": 20,
+        "titulo": "Primeira Lei da Termodinâmica",
+        "segmento": "texto04",
+        "autor": {
+            "nome": "Prof. Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 29, "anterior": 19 },
+        "parentId": 16
+    },
+    {
+        "id": 21,
+        "titulo": "Lista 03",
+        "segmento": "lista03",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 6 },
+        "parentId": 4
+    },
+    {
+        "id": 22,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 23, "anterior": null },
+        "parentId": 13
+    },
+    {
+        "id": 23,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 22 },
+        "parentId": 13
+    },
+    {
+        "id": 24,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 25, "anterior": null },
+        "parentId": 18
+    },
+    {
+        "id": 25,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 26, "anterior": 24 },
+        "parentId": 18
+    },
+    {
+        "id": 26,
+        "titulo": "Lista 03",
+        "segmento": "lista03",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 25 },
+        "parentId": 18
+    },
+    {
+        "id": 27,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 28, "anterior": null },
+        "parentId": 19
+    },
+    {
+        "id": 28,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 27 },
+        "parentId": 19
+    },
+    {
+        "id": 29,
+        "titulo": "Primeira Lei da Termodinâmica (2)",
+        "segmento": "texto05",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 20 },
+        "parentId": 16
+    },
+    {
+        "id": 30,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 31, "anterior": null },
+        "parentId": 15
+    },
+    {
+        "id": 31,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 30 },
+        "parentId": 15
+    },
+    {
+        "id": 32,
+        "titulo": "Lista 01",
+        "segmento": "lista01",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": 33, "anterior": null },
+        "parentId": 20
+    },
+    {
+        "id": 33,
+        "titulo": "Lista 02",
+        "segmento": "lista02",
+        "autor": {
+            "nome": "Geraldo Felipe",
+            "data": "2023"
+        },
+        "pagina": { "proxima": null, "anterior": 32 },
+        "parentId": 20
+    }
+]
