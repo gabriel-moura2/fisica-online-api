@@ -3,10 +3,8 @@ export interface Page {
   titulo: string;
   segmento: string;
   parentId?: number;
-  autor?: {
-    nome: string;
-    data: string;
-  };
+  autor?: number;
+  data?: string;
   pagina?: {
     proxima: number;
     anterior: number;
