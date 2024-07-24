@@ -9,4 +9,18 @@ export class PagesService {
   findAll(): Page[] {
     return this.pages;
   }
+
+  findOne(params: any ): Page {
+    console.log(params);
+    const paramIds = ['disciplina', 'topico', 'subtopico', 'texto', 'atividade'];
+
+    let current : Page = undefined;
+
+    while(params[paramIds[0]]) {
+      const paramId = paramIds.shift();
+      current = this.pages.find(page => page.segmento === params[paramId]);
+    }
+
+    return current;
+  }
 }

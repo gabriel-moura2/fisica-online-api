@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { PagesService } from './pages.service';
 import { Page } from './interfaces/page.interface';
 
@@ -9,5 +9,30 @@ export class PagesController {
     @Get()
     findAll(): Page[] {
         return this.pagesService.findAll();
+    }
+
+    @Get(':disciplina')
+    findDisciplina(@Param() params: any ): Page {
+        return this.pagesService.findOne(params);
+    }
+
+    @Get(':disciplina/:topico')
+    findTopico(@Param() params: any ): Page {
+        return this.pagesService.findOne(params);
+    }
+
+    @Get(':disciplina/:topico/:subtopico')
+    findSubtopico(@Param() params: any ): Page {
+        return this.pagesService.findOne(params);
+    }
+
+    @Get(':disciplina/:topico/:subtopico/:texto')
+    findTexto(@Param() params: any ): Page {
+        return this.pagesService.findOne(params);
+    }
+
+    @Get(':disciplina/:topico/:subtopico/:texto/:atividade')
+    findAtividade(@Param() params: any ): Page {
+        return this.pagesService.findOne(params);
     }
 }

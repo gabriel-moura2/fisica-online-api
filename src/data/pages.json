@@ -1,11 +1,11 @@
 [
-    { "id": 1, "titulo": "Física", "segmento": "fisica" },
-    { "id": 2, "titulo": "Termologia", "segmento": "termologia", "parentId": 1 },
+    { "id": 1, "titulo": "Física", "segmento": "fisica", "filhos": [2, 7] },
+    { "id": 2, "titulo": "Termologia", "segmento": "termologia", "filhos": [3, 16] },
     {
         "id": 3,
         "titulo": "Calorimetria",
         "segmento": "calorimetria",
-        "parentId": 2
+        "filhos": [4, 13, 14, 15]
     },
     {
         "id": 4,
@@ -16,7 +16,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": 13, "anterior": null },
-        "parentId": 3
+        "filhos": [5, 6, 21]
     },
     {
         "id": 5,
@@ -26,8 +26,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 6, "anterior": null },
-        "parentId": 4
+        "pagina": { "proxima": 6, "anterior": null }
     },
     {
         "id": 6,
@@ -37,11 +36,10 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 21, "anterior": 5 },
-        "parentId": 4
+        "pagina": { "proxima": 21, "anterior": 5 }
     },
-    { "id": 7, "titulo": "Mecânica", "segmento": "mecanica", "parentId": 1 },
-    { "id": 8, "titulo": "Dinâmica", "segmento": "dinamica", "parentId": 7 },
+    { "id": 7, "titulo": "Mecânica", "segmento": "mecanica", "filhos": [8] },
+    { "id": 8, "titulo": "Dinâmica", "segmento": "dinamica", "filhos": [10] },
     {
         "id": 10,
         "titulo": "Dinâmica II",
@@ -51,7 +49,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": null, "anterior": null },
-        "parentId": 8
+        "filhos": [11, 12]
     },
     {
         "id": 11,
@@ -61,8 +59,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 12, "anterior": null },
-        "parentId": 10
+        "pagina": { "proxima": 12, "anterior": null }
     },
     {
         "id": 12,
@@ -72,8 +69,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 11 },
-        "parentId": 10
+        "pagina": { "proxima": null, "anterior": 11 }
     },
     {
         "id": 13,
@@ -84,7 +80,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": 14, "anterior": 4 },
-        "parentId": 3
+        "filhos": [22, 23]
     },
     {
         "id": 14,
@@ -95,7 +91,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": 15, "anterior": 13 },
-        "parentId": 3
+        "filhos": []
     },
     {
         "id": 15,
@@ -106,13 +102,13 @@
             "data": "2023"
         },
         "pagina": { "proxima": null, "anterior": 14 },
-        "parentId": 3
+        "filhos": [30, 31]
     },
     {
         "id": 16,
         "titulo": "Termodinâmica",
         "segmento": "termodinamica",
-        "parentId": 2
+        "filhos": [17, 18, 19, 20, 29]
     },
     {
         "id": 17,
@@ -122,8 +118,7 @@
             "nome": "Prof. Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 18, "anterior": null },
-        "parentId": 16
+        "pagina": { "proxima": 18, "anterior": null }
     },
     {
         "id": 18,
@@ -134,7 +129,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": 19, "anterior": 17 },
-        "parentId": 16
+        "filhos": [24, 25, 26]
     },
     {
         "id": 19,
@@ -145,7 +140,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": 20, "anterior": 18 },
-        "parentId": 16
+        "filhos": [27, 28]
     },
     {
         "id": 20,
@@ -156,7 +151,7 @@
             "data": "2023"
         },
         "pagina": { "proxima": 29, "anterior": 19 },
-        "parentId": 16
+        "filhos": [32, 33]
     },
     {
         "id": 21,
@@ -166,8 +161,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 6 },
-        "parentId": 4
+        "pagina": { "proxima": null, "anterior": 6 }
     },
     {
         "id": 22,
@@ -177,8 +171,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 23, "anterior": null },
-        "parentId": 13
+        "pagina": { "proxima": 23, "anterior": null }
     },
     {
         "id": 23,
@@ -188,8 +181,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 22 },
-        "parentId": 13
+        "pagina": { "proxima": null, "anterior": 22 }
     },
     {
         "id": 24,
@@ -199,8 +191,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 25, "anterior": null },
-        "parentId": 18
+        "pagina": { "proxima": 25, "anterior": null }
     },
     {
         "id": 25,
@@ -210,8 +201,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 26, "anterior": 24 },
-        "parentId": 18
+        "pagina": { "proxima": 26, "anterior": 24 }
     },
     {
         "id": 26,
@@ -221,8 +211,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 25 },
-        "parentId": 18
+        "pagina": { "proxima": null, "anterior": 25 }
     },
     {
         "id": 27,
@@ -232,8 +221,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 28, "anterior": null },
-        "parentId": 19
+        "pagina": { "proxima": 28, "anterior": null }
     },
     {
         "id": 28,
@@ -243,8 +231,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 27 },
-        "parentId": 19
+        "pagina": { "proxima": null, "anterior": 27 }
     },
     {
         "id": 29,
@@ -254,8 +241,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 20 },
-        "parentId": 16
+        "pagina": { "proxima": null, "anterior": 20 }
     },
     {
         "id": 30,
@@ -265,8 +251,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 31, "anterior": null },
-        "parentId": 15
+        "pagina": { "proxima": 31, "anterior": null }
     },
     {
         "id": 31,
@@ -276,8 +261,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 30 },
-        "parentId": 15
+        "pagina": { "proxima": null, "anterior": 30 }
     },
     {
         "id": 32,
@@ -287,8 +271,7 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": 33, "anterior": null },
-        "parentId": 20
+        "pagina": { "proxima": 33, "anterior": null }
     },
     {
         "id": 33,
@@ -298,7 +281,6 @@
             "nome": "Geraldo Felipe",
             "data": "2023"
         },
-        "pagina": { "proxima": null, "anterior": 32 },
-        "parentId": 20
+        "pagina": { "proxima": null, "anterior": 32 }
     }
 ]
