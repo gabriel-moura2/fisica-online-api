@@ -11,7 +11,6 @@ export class PagesService {
   }
 
   findOne(params: any ): Page {
-    console.log(params);
     const paramIds = ['disciplina', 'topico', 'subtopico', 'texto', 'atividade'];
 
     let current : Page = undefined;
@@ -22,5 +21,9 @@ export class PagesService {
     }
 
     return current;
+  }
+
+  findById(id: number): Page {
+    return this.pages.find(page => page.id === id);
   }
 }
