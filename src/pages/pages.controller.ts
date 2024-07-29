@@ -11,11 +11,6 @@ export class PagesController {
         return this.pagesService.findAll();
     }
 
-    @Get('id/:id')
-    findById(@Param() params: any ): Page {
-        return this.pagesService.findById(parseInt(params.id));
-    }
-
     @Get(':disciplina')
     findDisciplina(@Param() params: any ): Page {
         return this.pagesService.findOne(params);
